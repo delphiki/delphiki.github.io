@@ -21,9 +21,9 @@ Une fois que c'est fait, on peut observer un petit trou à côté de la led roug
 
 ## Intégration dans Home Assistant
 
-L'association à la Zigate se fait dans Home Assistant grâce au service `zigate.permit_join` (toujours en utilisant le [composant de doudz](https://github.com/doudz/homeassistant-zigate). Celui-ci met la Zigate en mode association (Permit Join) pour 30 secondes.
+L'association à la Zigate se fait dans Home Assistant grâce au service `zigate.permit_join` (toujours en utilisant le [composant de doudz](https://github.com/doudz/homeassistant-zigate)). Celui-ci met la Zigate en mode association (Permit Join) pour 30 secondes.
 
-Vous pouvez vous créer un raccourci grâce au _custom panel_ comme indiqué dans la doc du composant, ou en ajoutant un simple switch dans lovelace (comme je l'ai fait. Dans le second cas, l'entité s'appelle `input_boolean.zigate_permit_join`.
+Vous pouvez vous créer un raccourci grâce au _custom panel_ comme indiqué dans la doc du composant, ou en ajoutant un simple switch dans lovelace (comme je l'ai fait). Dans le second cas, l'entité s'appelle `input_boolean.zigate_permit_join`.
 
 Les étapes pour l'association sont les suivantes :
 
@@ -31,13 +31,13 @@ Les étapes pour l'association sont les suivantes :
 2. Rester appuyé sur le bouton reset `jusqu'à ce que la led clignote` (~ 8 secondes), attendre un peu, puis `rappuyer une fois` sur le bouton reset.
 3. La led devient `verte`, puis la nouvelle entité apparait dans Home Assistant.
 
-Ces étapes sont illustées dans la vidéo suivante :
+Ces étapes sont illustrées dans la vidéo suivante :
 
 {% include youtube_embed.html id="7GZPuC3sWik" %}  
 
 Vous aurez ensuite des entités `cover` que vous pourrez utiliser très facilement, elles porteront un nom en `cover.zigate_XXXXXXXXXX`.
 
-Ces entités fournissent notamment les informations sur l'ouverture, la fermeture, ou encore le taux d'ouverture du volet :
+Ces entités fournissent notamment des informations sur l'ouverture, la fermeture, ou encore le taux d'ouverture du volet :
 
 ![détails cover home assistant](/uploads/details_cover_ha.png "Détails des informations sur les volets dans Home Assistant")
 
